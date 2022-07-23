@@ -16,6 +16,8 @@ html {
 body {
     background-color: var(--cor-background-primary);
     color: var(--cor-primary);
+    width: 100vw;
+    min-height: 100vh;
 }
 
 :root {

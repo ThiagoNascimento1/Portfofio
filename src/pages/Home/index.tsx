@@ -2,9 +2,10 @@
 import { Profile } from "../../components/Profile";
 import { NavBar } from "../../components/NavBar";
 import { Skills } from "../../components/Skills";
+import { Projects } from "../../components/Projects";
 
 // Hooks
-import { useState } from 'react';
+import { useState } from "react";
 
 // CSS
 import "./style.css";
@@ -13,6 +14,7 @@ import "./style.css";
 import { profileInfo } from "../../data/ProfileInfo";
 import { social } from "../../data/Social";
 import { skills } from "../../data/Skills";
+import { projectsList } from "../../data/ProjectsList";
 
 
 export const App = () => {
@@ -38,7 +40,8 @@ export const App = () => {
     <div className="app">
       <Profile name={profileInfo.name} job={profileInfo.job} image={profileInfo.image} social={social}/>
       <NavBar setSection={handleSectionNav} sectionSelected={sectionSelected}/>
-      <Skills skills={skills}/>
+      {sectionNav === 'skills' && <Skills skills={skills}/>}
+      {sectionNav === 'projects' && <Projects projects={projectsList}/>}
     </div>
   )
 };

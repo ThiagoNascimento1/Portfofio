@@ -7,8 +7,10 @@
 
 .skills .item {
     margin: 20px auto 0;
-    min-width: 80vw;
+    width: 80vw;
+    max-width: 550px;
     height: 80vw;
+    max-height: 550px;
     display: flex;
     flex-direction: column;
     justify-content: center;

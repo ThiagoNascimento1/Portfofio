@@ -1,0 +1,71 @@
+.projects {
+    width: 100%;
+    margin-top: 20px;
+    padding-bottom: 40px;
+    transition: all .5s linear;
+}
+
+.projects .item {
+    margin: 40px auto 0;
+    width: 80vw;
+    max-width: 550px;
+    height: 70vw;
+    max-height: 550px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background: url(../../assets/folder.png) 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+
+.projects .item .title {
+    font-size: 35px;
+    padding: 10px 0;
+    background-color: rgba(202, 91, 0, 1);
+}
+
+.projects .item .technologies {
+    width: 40%;
+    background-color: rgba(202, 91, 0, .5);
+}
+
+.projects .item .technologies .tech {
+    padding: 3px;
+    font-size: 15px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.projects .item .technologies .tech:before {
+    content: '';
+    position: absolute;
+    border: 5px solid rgba(202, 91, 0, 1);
+    transform: rotate(45deg);
+    left: 10px;
+    top: 13px;
+}
+
+@keyFrames shadow {
+    0%, 100% {box-shadow: 0 0 20px #000}
+    50% {box-shadow: 0 0 20px #fff}
+}
+
+.img-code {
+    overflow: hidden;
+    position: absolute;
+    width: 120px;
+    height: 180px;
+    border-radius: 5px;
+    right: 10px;
+    bottom: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 20px #000;
+    animation: shadow 4s linear infinite;
+}
+
+.img-code img {
+    height: 100%;
+}

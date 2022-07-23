@@ -1,9 +1,9 @@
 import './style.css';
 
 interface Props {
-    skills: Obj[]
+    skills: Obj[];
 }
-type Obj = {technology: string, level: string, icon: JSX.Element}
+type Obj = {technology: string, level: string, icon: JSX.Element};
 
 export const Skills = ({ skills }: Props) => {
     return (
@@ -17,7 +17,6 @@ export const Skills = ({ skills }: Props) => {
                     </div>
                 ))
             }
-            
         </div>
     )
-}
+};
