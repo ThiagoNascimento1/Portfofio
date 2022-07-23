@@ -1,0 +1,8 @@
+.app {
+    width: 100%;
+    max-width: 597px;
+    min-height: 100vh;
+    margin: auto;
+    padding: 3rem 0;
+}
+

@@ -1,0 +1,57 @@
+.profile {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.img img {
+    width: 100%;
+}
+
+.name {
+    font-size: 28px;
+    font-weight: bold;
+    position: relative;
+}
+
+.name::after {
+    content: '|';
+    position: absolute;
+    animation: piscar .7s infinite;
+}
+
+@keyframes piscar {
+    0%, 100% {opacity: 1}
+    50% {opacity: 0}
+}
+
+.job {
+    font-size: 18px;
+    color: var(--cor-secondary);
+}
+
+.social {
+    width: 200px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.social a {
+    display: inline-block;
+    font-size: 25px;
+    padding: 5px 8px;
+    color: var(--cor-primary);
+}
