@@ -1,0 +1,32 @@
+.skills {
+    width: 100%;
+    margin-top: 10px;
+    padding-bottom: 40px;
+    transition: all .5s linear;
+}
+
+.skills .item {
+    margin: 20px auto 0;
+    min-width: 80vw;
+    height: 80vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: var(--cor-background-secondary);
+    border-radius: 5px;
+}
+
+.skills .item .name-skill {
+    font-size: 27px;
+}
+
+.skills .item .icon-skill {
+    font-size: 60px;
+}
+
+.skills .item .level-skill {
+    font-size: 15px;
+    color: var(--cor-secondary);
+}
