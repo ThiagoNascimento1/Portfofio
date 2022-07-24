@@ -3,7 +3,7 @@ import './style.css';
 interface Props {
     projects: Obj[];
 }
-type Obj = {title: string, tech: string[], imgcode: string, link: string};
+type Obj = {title: string, tech: JSX.Element[], imgexample: string[], link: string};
 
 export const Projects = ({ projects }: Props) => {
 
@@ -21,8 +21,8 @@ export const Projects = ({ projects }: Props) => {
                             }
                             
                         </div>
-                        <div className="img-code">
-                            <img src={item.imgcode}/>
+                        <div className={`img-project ${item.imgexample[1]}`}>
+                            <img src={item.imgexample[0]}/>
                         </div>
                     </div>
                 ))
