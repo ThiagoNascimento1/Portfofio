@@ -17,7 +17,7 @@
     position: absolute;
     width: 90px;
     height: 35px;
-    background-color: var(--cor-background-item);
+    background-color: var(--cor-item);
     z-index: 1;
     border-radius: 15px;
     transition: all .5s linear;

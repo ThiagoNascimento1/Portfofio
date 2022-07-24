@@ -1,0 +1,18 @@
+.aboutme {
+    width: 100%;
+    padding: 30px 0;
+}
+
+.salutation {
+    font-size: 28px;
+    font-weight: 700;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.description {
+    padding: 0 15px;
+    font-size: 20px;
+    margin-top: 10px;
+    font-style: italic;
+}

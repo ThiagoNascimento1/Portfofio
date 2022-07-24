@@ -3,6 +3,7 @@ import { Profile } from "../../components/Profile";
 import { NavBar } from "../../components/NavBar";
 import { Skills } from "../../components/Skills";
 import { Projects } from "../../components/Projects";
+import { AboutMe } from "../../components/AboutMe";
 
 // Hooks
 import { useState } from "react";
@@ -15,6 +16,7 @@ import { profileInfo } from "../../data/ProfileInfo";
 import { social } from "../../data/Social";
 import { skills } from "../../data/Skills";
 import { projectsList } from "../../data/ProjectsList";
+import { aboutMe } from "../../data/AboutMe";
 
 
 export const App = () => {
@@ -32,8 +34,9 @@ export const App = () => {
     } else if (item === 'aboutMe') {
       setSectionSelected('235px');
     }
-
-    SetSectionNav(item);
+    setTimeout (() => {
+      SetSectionNav(item)
+    }, 250)
   };
 
   return (
@@ -42,6 +45,7 @@ export const App = () => {
       <NavBar setSection={handleSectionNav} sectionSelected={sectionSelected}/>
       {sectionNav === 'skills' && <Skills skills={skills}/>}
       {sectionNav === 'projects' && <Projects projects={projectsList}/>}
+      {sectionNav === 'aboutMe' && <AboutMe aboutMe={aboutMe}/>}
     </div>
   )
 };

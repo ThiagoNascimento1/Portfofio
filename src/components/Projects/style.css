@@ -42,7 +42,6 @@
 
 .projects .item .technologies .tech {
     font-size: 40px;
-    animation: shadow 4s linear infinite;   
 }
 
 @keyFrames shadow {
