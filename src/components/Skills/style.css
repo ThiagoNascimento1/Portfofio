@@ -32,3 +32,25 @@
     font-size: 15px;
     color: var(--cor-secondary);
 }
+
+@media (min-width: 992px) {
+
+    .skills {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .skills .item {
+        margin: 15px auto 0;
+        width: 95%;
+        height: 280PX;
+        max-height: 550px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        background-color: var(--cor-background-secondary);
+        border-radius: 5px;
+    }
+}

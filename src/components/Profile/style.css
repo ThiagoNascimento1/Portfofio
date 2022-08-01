@@ -55,3 +55,19 @@
     padding: 5px 8px;
     color: var(--cor-primary);
 }
+
+@media (min-width: 992px) {
+
+    .img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .name {
+        font-size: 25px;
+    }
+
+    .job {
+        font-size: 22px;
+    }
+}
