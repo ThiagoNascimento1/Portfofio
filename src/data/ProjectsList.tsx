@@ -1,5 +1,14 @@
 export const projectsList = [
     {
+        title: "QRCode Generator",
+        tech: [
+            <i className="devicon-react-original colored"></i>,
+            <i className="devicon-typescript-plain colored"></i>
+        ],
+        imgexample: ["./qrcodegenerator.gif", "horizontal"],
+        link: "https://github.com/Thiagonascimento1/qr-code-generator"
+    },
+    {
         title: "Attendance List",
         tech: [
             <i className="devicon-react-original colored"></i>,
